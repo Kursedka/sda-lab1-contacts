@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDA Lab 1 Cazac", "SDA Lab 1 Cazac.vcxproj", "{D83D45C0-F240-4397-92E2-A9F463751429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Debug|x64.ActiveCfg = Debug|x64
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Debug|x64.Build.0 = Debug|x64
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Debug|x86.ActiveCfg = Debug|Win32
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Debug|x86.Build.0 = Debug|Win32
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Release|x64.ActiveCfg = Release|x64
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Release|x64.Build.0 = Release|x64
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Release|x86.ActiveCfg = Release|Win32
+		{D83D45C0-F240-4397-92E2-A9F463751429}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7B0447F-527F-4996-992F-DFD940E1696F}
+	EndGlobalSection
+EndGlobal
