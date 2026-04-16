@@ -1,4 +1,3 @@
-// -*- coding: utf-8 -*-
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,22 +28,15 @@ int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 #endif
-
     capacity = INITIAL_CAPACITY;
     contacts = (struct Contact*)malloc(capacity * sizeof(struct Contact));
-    if (contacts == NULL) {
-        printf("Ошибка выделения памяти!\n");
-        return 1;
-    }
+    if (contacts == NULL) { printf("Ошибка выделения памяти!\n"); return 1; }
     size = 0;
-
     loadFromFile();
-
     int choice;
     do {
         print_menu();
-        scanf("%d", &choice);
-        while (getchar() != '\n'); // очистка буфера после ввода числа
+        scanf("%d", &choice); while (getchar() != '\n');
         switch (choice) {
         case 1: add_contact(); break;
         case 2: print_contacts(); break;
@@ -62,10 +54,8 @@ int main() {
             saveToFile();
             clearArray();
             break;
-        default:
-            printf("Неверный выбор. Попробуйте снова.\n");
+        default: printf("Неверный выбор. Попробуйте снова.\n");
         }
     } while (choice != 12);
-
     return 0;
 }

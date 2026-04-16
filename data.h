@@ -1,4 +1,3 @@
-// -*- coding: utf-8 -*-
 #ifndef DATA_H
 #define DATA_H
 
@@ -13,7 +12,7 @@ struct Contact {
     char name[NAME_LEN];
     char phone[PHONE_LEN];
     char email[EMAIL_LEN];
-    char birthday[11];   // ฤฤ.ฬฬ.รรรร
+    char birthday[11];
     char category[CATEGORY_LEN];
 };
 
