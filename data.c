@@ -94,9 +94,7 @@ void loadFromFile() {
         fclose(f);
         return;
     }
-    // Очищаем текущий список
     clearArray();
-    // Выделяем память под новые контакты
     capacity = (newSize > INITIAL_CAPACITY) ? newSize : INITIAL_CAPACITY;
     contacts = (struct Contact*)malloc(capacity * sizeof(struct Contact));
     if (contacts == NULL) {
@@ -118,7 +116,7 @@ void loadFromFile() {
     printf("Загружено %d контактов из файла %s.\n", size, SAVE_FILE);
 }
 
-// ---------- Остальные функции (аналогично 3-й лабе) ----------
+// ---------- Функции работы с контактами ----------
 void add_contact() {
     struct Contact newContact;
     printf("\n--- Добавление нового контакта ---\n");

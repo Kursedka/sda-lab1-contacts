@@ -12,7 +12,7 @@ struct Contact {
     char name[NAME_LEN];
     char phone[PHONE_LEN];
     char email[EMAIL_LEN];
-    char birthday[11];
+    char birthday[11];   // ฤฤ.ฬฬ.รรรร
     char category[CATEGORY_LEN];
 };
 

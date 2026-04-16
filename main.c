@@ -29,7 +29,6 @@ int main() {
     SetConsoleOutputCP(1251);
 #endif
 
-    // Начальное выделение памяти
     capacity = INITIAL_CAPACITY;
     contacts = (struct Contact*)malloc(capacity * sizeof(struct Contact));
     if (contacts == NULL) {
@@ -38,7 +37,6 @@ int main() {
     }
     size = 0;
 
-    // Загружаем контакты из файла при старте
     loadFromFile();
 
     int choice;
@@ -59,7 +57,7 @@ int main() {
         case 11: saveToFile(); break;
         case 12:
             printf("Выход из программы...\n");
-            saveToFile();       // автосохранение перед выходом
+            saveToFile();
             clearArray();
             break;
         default:
