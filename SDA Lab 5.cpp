@@ -6,7 +6,7 @@
 #include <windows.h>
 #endif
 
-// Структура контакта (как в предыдущих работах)
+// Структура контакта 
 #define NAME_LEN 50
 #define PHONE_LEN 20
 #define EMAIL_LEN 50
@@ -84,7 +84,7 @@ struct TreeNode* insert(struct TreeNode* root, struct Contact data) {
     if (root == NULL) {
         return createNode(data);
     }
-    // Сравниваем имена (можно использовать strcmp)
+    // Сравниваем имена (используем strcmp)
     if (strcmp(data.name, root->data.name) < 0) {
         root->left = insert(root->left, data);
     }
