@@ -1,0 +1,5 @@
+Анна +37379123456 anna@example.com 15.05.1990 личные
+NULL
+Пётр +37379456789 petr@example.com 30.05.1993 другое
+NULL
+NULL
